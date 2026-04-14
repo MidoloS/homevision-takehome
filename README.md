@@ -11,6 +11,10 @@ npm install
 npm run dev
 ```
 
+https://homevision-takehome.vercel.app/
+
+Live Demo https://homevision-takehome.vercel.app/
+
 Open [http://localhost:3000](http://localhost:3000).
 
 ## Technical Decisions
@@ -50,15 +54,15 @@ The API returns only address, price, owner, and photo. To produce a richer card 
 
 Accessibility was a first-class concern throughout:
 
-| Feature | Implementation |
-|---|---|
-| **Focus management** | Visible `:focus-visible` ring on every interactive element; `outline` suppressed on mouse clicks. |
-| **Skip link** | Hidden "Skip to main content" link becomes visible on Tab, smoothly scrolls to `#main-content` (instant if `prefers-reduced-motion`). |
-| **Semantic HTML** | `<header>`, `<nav>`, `<main>`, `<article>` used throughout. Headings follow a logical hierarchy. |
-| **ARIA attributes** | `aria-label` on icon buttons, `aria-live` region for dynamic loading/error announcements, `role="switch"` + `aria-checked` on the theme toggle. |
-| **Reduced motion** | All animations (`heart-pop`, skeleton pulse) are disabled when the user prefers reduced motion. |
-| **Touch targets** | Every interactive element meets the 44 × 44 px minimum touch target. |
-| **Colour contrast** | Text and interactive elements meet WCAG AAA contrast ratios in both light and dark themes. |
+| Feature              | Implementation                                                                                                                                  |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Focus management** | Visible `:focus-visible` ring on every interactive element; `outline` suppressed on mouse clicks.                                               |
+| **Skip link**        | Hidden "Skip to main content" link becomes visible on Tab, smoothly scrolls to `#main-content` (instant if `prefers-reduced-motion`).           |
+| **Semantic HTML**    | `<header>`, `<nav>`, `<main>`, `<article>` used throughout. Headings follow a logical hierarchy.                                                |
+| **ARIA attributes**  | `aria-label` on icon buttons, `aria-live` region for dynamic loading/error announcements, `role="switch"` + `aria-checked` on the theme toggle. |
+| **Reduced motion**   | All animations (`heart-pop`, skeleton pulse) are disabled when the user prefers reduced motion.                                                 |
+| **Touch targets**    | Every interactive element meets the 44 × 44 px minimum touch target.                                                                            |
+| **Colour contrast**  | Text and interactive elements meet WCAG AAA contrast ratios in both light and dark themes.                                                      |
 
 ## Design & Theming
 
