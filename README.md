@@ -11,8 +11,6 @@ npm install
 npm run dev
 ```
 
-https://homevision-takehome.vercel.app/
-
 Live Demo https://homevision-takehome.vercel.app/
 
 Open [http://localhost:3000](http://localhost:3000).
